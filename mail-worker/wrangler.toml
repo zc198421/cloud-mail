@@ -5,20 +5,12 @@ keep_vars = true
 [observability]
 enabled = true
 
-#[[d1_databases]]
-#binding = "db"			#d1数据库绑定名默认不可修改
-#database_name = ""		#d1数据库名字
-#database_id = ""		#d1数据库id
-
-#[[kv_namespaces]]
-#binding = "kv"			#kv绑定名默认不可修改
-#id = ""					#kv数据库id
-# ...
-[[previews.d1_databases]]
-binding = "db"
+[[d1_databases]]
+binding = "db"			#d1数据库绑定名默认不可修改
+database_name = "email"
 database_id = "04c5e332-9181-4219-8495-448979d736d1"
 
-[[previews.kv_namespaces]]
+[[kv_namespaces]]
 binding = "kv"
 id = "3981925281bc468795563f7a3bc7b841"
 # ...
